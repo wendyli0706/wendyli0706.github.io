@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>學習練習</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #enname {
+        display: none;
+      }
+      img {
+        object-fit: none;
+        border: 1px solid;
+      }
+      * {
+        color: peru;
+      }
+      #dreamtittle {
+        font-size: 200%;
+      }
+      .name {
+        color: rgb(11, 33, 226);
+      }
+      h5 {
+        color: grey;
+        font-size: 70%;
+      }
+      ul h3 {
+        color: cadetblue;
+        font-style: DESIGNER;
+      }
+      h2 {
+        font-size: 14px;
+      }
+      h1 {
+        font-family: "Lexend Peta", sans-serif;
+        text-shadow: -2px 1px 6px grey;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        //window.alert("You have been hacked!");
+        $("#cnname").click(function () {
+          $("#enname").slideToggle();
+        });
+        $("h2").css("color", "red");
+        $("h1").click(function () {
+          $("h2").css("color", "green");
+        });
+        $("img").click(function () {
+          window.alert("誒誒誒！ 幹嘛！");
+        });
+        $("ol li").click(function () {
+          $(this).css("color", "red");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1 class="name" id="cnname">TSAICHEN LEE</h1>
+    <h2 class="name" id="enname">(Wendy Lee)</h2>
+    <h5>Industrial Designer</h5>
+    <h5>wendyli0706@gmail.com</h5>
+    <ul style="list-style-type: square;">
+      <li><h3>Skills</h3></li>
+    </ul>
+    <ul>
+      <li>Adobe Photoshop</li>
+      <li>Adobe XD</li>
+      <li>Rhino</li>
+      <li>Model Making</li>
+    </ul>
+    <ul style="list-style-type: square;">
+      <li><h3>Work Experiences</h3></li>
+    </ul>
+    <ol type="i">
+      <li>INTERN</li>
+      <li>DESIGN CONSULTANT</li>
+      <li id="dreamtittle">DESIGNER</li>
+    </ol>
+    <img
+      src="./images/portrait.jpg"
+      width="180"
+      height="100"
+      alt="Wait for it! :)))"
+    />
+    <br />
+    <br />
+    <br />
+    <a href="https://tsaichenlee.myportfolio.com/" target="_blank"
+      >Click here for Portfolio
+    </a>
+    <br />
+    <br />
+    <br />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/N5bW1bozmxM"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>
